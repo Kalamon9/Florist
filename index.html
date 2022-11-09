@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florist</title>
     <link rel="icon" href="img/favicon.ico" />
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/9c31cf3810.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,8 +52,12 @@
           <li class="nav-link">win</li>
         </ul>
         <div class="nav-acc">
-          <div class="basket">basket</div>
-          <div class="profile">profile</div>
+          <div class="basket">
+            <i class="fa fa-shopping-basket"></i>
+          </div>
+          <div class="profile">
+            <i class="fa fa-solid fa-user"></i>
+          </div>
         </div>
       </nav>
 
@@ -56,21 +66,21 @@
           <div class="thing">
             <div class="carousel-item carousel-item--1">
               <div class="carousel-item-info">
-                <h2>What is your reason to give flowers?</h2>
+                <h2>Luxury Flowers</h2>
                 <p>Available Same Day Delivery</p>
                 <button class="btn-white-outline">Buy</button>
               </div>
             </div>
             <div class="carousel-item carousel-item--2">
               <div class="carousel-item-info">
-                <h2>What is your reason to give flowers?</h2>
+                <h2>Glorious Flowers</h2>
                 <p>Available Same Day Delivery</p>
                 <button class="btn-white-outline">Buy</button>
               </div>
             </div>
             <div class="carousel-item carousel-item--3">
               <div class="carousel-item-info">
-                <h2>What is your reason to give flowers?</h2>
+                <h2>Rustic Bouquet</h2>
                 <p>Available Same Day Delivery</p>
                 <button class="btn-white-outline">Buy</button>
               </div>
@@ -179,76 +189,57 @@
         </div>
       </div>
       <div class="review">
-        Our customers say Excellent ***** 4.73 out of 5 based on 1039 reviews
+        <p>
+          Our customers say Excellent &nbsp;
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          <i class="fa fa-solid fa-star"></i>
+          &nbsp; 4.73 out of 5 based on 1039 reviews
+        </p>
       </div>
       <div class="four-imgs">
-        <h4>Shop all occasions</h4>
+        <h4 class="ocassions-section-title">
+          What is your reason to give flowers?
+        </h4>
         <div class="grid-x grid-padding-x grid-padding-y">
           <div class="cell medium-6 large-3">
-            <img src="img/thankyou.jpg" />
+            <div class="img-container">
+              <img src="img/thankyou.jpg" />
+              <div class="occasion-info">Thank you</div>
+            </div>
           </div>
-          <div class="cell medium-6 large-3"><img src="img/bday.jpg" /></div>
-          <div class="cell medium-6 large-3"><img src="img/sq.jpg" /></div>
-          <div class="cell medium-6 large-3"><img src="img/wedding.jpg" /></div>
+          <div class="cell medium-6 large-3">
+            <div class="img-container">
+              <img src="img/bday.jpg" />
+              <div class="occasion-info">Birthday</div>
+            </div>
+          </div>
+          <div class="cell medium-6 large-3">
+            <div class="img-container">
+              <img src="img/sq.jpg" />
+              <div class="occasion-info">Anniversary</div>
+            </div>
+          </div>
+          <div class="cell medium-6 large-3">
+            <div class="img-container">
+              <img src="img/wedding.jpg" />
+              <div class="occasion-info">Wedding</div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="contact-us">
-        <div class="grid-x">
-          <div class="cell medium-6 contact-form">
-            <h4>Cuntact us</h4>
-            <form>
-              <div class="grid-container">
-                <div class="grid-x grid-padding-x">
-                  <div class="medium-6 cell">
-                    <label
-                      >Input Label
-                      <input type="text" placeholder="First Name" />
-                    </label>
-                  </div>
-                  <div class="medium-6 cell">
-                    <label
-                      >Input Label
-                      <input type="text" placeholder="Surname" />
-                    </label>
-                  </div>
-                </div>
-                <div class="grid-x grid-padding-x">
-                  <div class="medium-6 cell">
-                    <label
-                      >Input Label
-                      <input type="text" placeholder="First Name" />
-                    </label>
-                  </div>
-                  <div class="medium-6 cell">
-                    <label
-                      >Input Label
-                      <input type="text" placeholder="Surname" />
-                    </label>
-                  </div>
-                </div>
-
-                <div class="grid-x">
-                  <div class="cell">
-                    <textarea
-                      placeholder="Leave your message here*"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <button class="btn-black">Read more &#8594;</button>
-          </div>
-        </div> 
-      </div>-->
 
       <footer class="footer">
-        <div class="grid-x grid-padding-x grid-padding-y">
-          <div class="cell medium-6 large-2">Company</div>
-          <div class="cell medium-6 large-2">Movie</div>
-          <div class="cell medium-6 large-2">Store</div>
-          <div class="cell medium-6 large-2">Holidays</div>
-          <div class="cell medium-6 large-2">Contact</div>
+        <!-- <img class="footer-logo" src="img/flower-bouquet-1.png" /> -->
+        <a class="footer-brand" href="#">Florist</a>
+        <div class="grid-x grid-padding-x">
+          <div class="cell small-4 medium-2"><a href="#">About Us</a></div>
+          <div class="cell small-4 medium-2"><a href="#">Contact Us</a></div>
+          <div class="cell small-4 medium-2"><a href="#">Delivery</a></div>
+          <div class="cell small-6 medium-2"><a href="#">Careers</a></div>
+          <div class="cell small-6 medium-2"><a href="#">Terms</a></div>
         </div>
       </footer>
     </div>
