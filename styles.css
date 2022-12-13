@@ -79,6 +79,10 @@ h6 {
 .profile {
   margin-left: 2rem;
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
 /* carousel */
 
 .carousel-item {
@@ -282,3 +286,35 @@ h6 {
 /* background-image: linear-gradient(to right bottom, red, blue);
   color: transparent;
   background-clip: text; */
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .carousel-item-info h2 {
+    font-size: 3rem;
+  }
+  .carousel-item-info p {
+    font-size: 1.6rem;
+  }
+  .update,
+  .banner {
+    padding: 0 7%;
+  }
+  .scroll-flowers {
+    padding: 2rem 0 2rem 1rem;
+  }
+  .img-and-text .text,
+  .review {
+    padding: 2rem 1.5rem;
+  }
+  .review span {
+    white-space: nowrap;
+  }
+  .img-container {
+    border: 1px solid #91ada4;
+  }
+  .footer {
+    padding-top: 2.5rem;
+  }
+}

@@ -1,4 +1,5 @@
 // alert("k");
+
 $(document).ready(function () {
   $(".thing").slick({
     dots: true,
